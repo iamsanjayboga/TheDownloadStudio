@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TheDownloadStudio.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - TheDownloadStudio</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/DesignCss.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+ 
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" data-ajax ="false">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #2229AA">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/YoutubeDownloader" style="color: white; font-size: x-large">TheDownloadStudio</a>
+                </div>
+                <div class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" style="color: white; font-size: large" href="~/ImageConvertor.aspx">Image Convertor</a></li>
+                        <li><a runat="server" style="color: white; font-size: large" href="~/word-compressor.aspx">Word Convertor</a></li>
+                        <li><a runat="server" style="color: white; font-size: large" href="~/Contact">Facebook</a></li>
+                        <li><a runat="server" style="color: white; font-size: large" href="~/Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p style="color: black; text-align: center; font-size: 15px">© Copyright <%: DateTime.Now.Year %>  Fast Password Generator – All Right Reserved | Made with ❤️ in INDIA</p>
+                    </div>
+                </div>
+
+                <div class="row"  style="text-align: center">
+                    <div class="col-lg-12">
+                        <%--<ul class="nav navbar-nav" style="margin-top: 8px; font-size: 15px; justify-content: center">
+                            <li><a runat="server" style="color: black" href="~/">Youtube</a></li>
+                            <li><a runat="server" style="color: black" href="~/About">Instagram</a></li>
+                            <li><a runat="server" style="color: black" href="~/Contact">Facebook</a></li>
+                            <li><a runat="server" style="color: black" href="~/About">Privacy Policy</a></li>
+                            <li><a runat="server" style="color: black" href="~/Contact">Terms of Service</a></li>
+                        </ul>--%>
+                        <p>
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp                            
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                            &nbsp
+                        <a href="http://www.stopsweats.org">StopSweats</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+       <%-- <div class="navbar">
+            <footer>
+                <div class="row" style="background-color: #363535; padding-bottom: 25px">
+                    <div class="col-lg-3">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 style="color: white">About Us</h2>
+                        <span style="color: white">Beyond deals is that one stop solution where one can buy any product without any qualms about quality as we have our experts who impeccably pick the right product considering various parameters because it’s our job to take care of it.
+                            Contact us :  sochbeyond@gmail.com
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="background-color: black; padding-top: 5px;margin-bottom:-50px">
+
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <p style="color: white">© Copyright 2020  TheDownloadStudio – All Right Reserved | Made with ❤️ in INDIA</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="nav navbar-nav" style="margin-top: -15px">
+                            <li><a runat="server" style="color: white" href="~/">Youtube</a></li>
+                            <li><a runat="server" style="color: white" href="~/About">Instagram</a></li>
+                            <li><a runat="server" style="color: white" href="~/Contact">Facebook</a></li>
+                            <li><a runat="server" style="color: white" href="~/About">Privacy Policy</a></li>
+                            <li><a runat="server" style="color: white" href="~/Contact">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1"></div>
+                </div>
+
+            </footer>
+        </div>--%>
+        <asp:ContentPlaceHolder ID="ScriptContent" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

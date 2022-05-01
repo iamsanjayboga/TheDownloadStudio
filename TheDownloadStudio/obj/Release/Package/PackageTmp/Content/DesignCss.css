@@ -1,0 +1,51 @@
+﻿body {
+}
+
+.aligncenter{
+    text-align:center
+}
+
+
+.align {
+    text-align: center;
+}
+
+.margin {
+    margin-top: 50px;
+}
+/* Style buttons */
+.btn {
+    background-color: #2229aa;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.para {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px
+}
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+.search {
+    width: 100%;
+    border: 2px solid #2229aa;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 56px;
+    padding: 17px 20px;
+    font-size: 14px;
+}
+
+.alert {
+    color: red;
+}
+
+
